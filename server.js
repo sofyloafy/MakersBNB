@@ -13,4 +13,10 @@ app.get('/sign-in', function (request, response) {
   response.render('loginPage')
 });
 
+app.get('/profile', function (request, response) {
+  response.render('profile')
+});
+
+
+
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))

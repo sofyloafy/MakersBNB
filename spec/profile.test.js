@@ -10,6 +10,7 @@ describe('sign up page re-directs us to the correct profile', () => {
         await browser.findElement(by.name("email")).sendKeys("josh@aol.com");
         await browser.findElement(by.name("password")).sendKeys("pa$$word");
         await browser.findElement(by.name("submit")).click();
-        expect(browser.getCurrentUrl()).toContain('profile')
+        const profileUrl = await browser.getCurrentUrl()
+        expect(profileUrl).toContain('profile')
     });
 });
