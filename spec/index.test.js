@@ -2,7 +2,7 @@
  * @jest-environment jest-environment-webdriver
  */
 
-const url = "http://localhost:3000";
+const url = "http://localhost:4000";
 
 describe('our index has a title', () => {
     test('it renders', async () => {
@@ -26,4 +26,3 @@ describe('our index has a title', () => {
 //         expect(title).toContain('WebdriverIO · Next-gen browser and mobile automation test framework for Node.js');
 //     });
 // });
-
