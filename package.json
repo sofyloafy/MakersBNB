@@ -1,0 +1,23 @@
+{
+  "name": "MakersBNB",
+  "version": "1.0.0",
+  "description": "First commit!",
+  "main": "index.js",
+  "scripts": {
+      "test": "jest"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofyloafy/MakersBNB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sofyloafy/MakersBNB/issues"
+  },
+  "homepage": "https://github.com/sofyloafy/MakersBNB#readme",
+  "dependencies": {
+    "jest": "^26.0.1"
+  }
+}
