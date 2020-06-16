@@ -1,7 +1,7 @@
 const { Client } = require('pg');
 
 const client = new Client({
-    user: 'sophiebrown',
+    user: 'student',
     host: 'localhost',
     database: 'makersbnb',
     password: 'password',
@@ -18,11 +18,11 @@ INSERT INTO properties (
   price,
   host)
 VALUES (
-  "Beautiful villa",
-  "Valencia",
-  "Set in the hills and filled with light",
+  'Beautiful villa',
+  'Valencia',
+  'Set in the hills and filled with light',
   250,
-  "Sophie");
+  'Sophie');
 `;
 
 client.query(query, (err, res) => {

@@ -1,7 +1,7 @@
 const { Client } = require('pg');
 
 const client = new Client({
-    user: 'sophiebrown',
+    user: 'student',
     host: 'localhost',
     database: 'makersbnb',
     password: 'password',
