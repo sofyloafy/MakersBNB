@@ -1,7 +1,8 @@
+require('dotenv').config();
 const { Client } = require('pg');
 
 const client = new Client({
-    user: 'student',
+    user: 'sophiebrown',
     host: 'localhost',
     database: 'makersbnb',
     password: 'password',
@@ -21,47 +22,52 @@ CREATE TABLE properties (
 `;
 
 const insertProperty = (request, response) => {
+  console.log("Hello world")
   const { title, location, description, price, host} = request.body
 
-  pool.query('INSERT INTO properties (title, location, description, price, host) VALUES ($1, $2, $3, $4, $5)',
+  client.query('INSERT INTO properties (title, location, description, price, host) VALUES ($1, $2, $3, $4, $5)',
   [title, location, description, price, host], (error, results) => {
     if (error) {
       throw error
     }
-    response.status(201).send(`Property added with ID: ${results.rows[0].id}`)
+    // response.status(201).send(`Property added with ID: ${results.rows[0].id}`)
+    console.log("Hello world")
   })
 }
-//${result.insertId}
+
+const request = {'body':{title: 'villa', location: 'Valencia', description: 'bla bla', price: 100, host: 'Sophie'}}
+
+// (insertProperty({body}));
+
+// insertProperty(request)
+// console.log(request.body)
 
 
-// const insertProperty = `
-// INSERT INTO properties (
-//   title,
-//   location,
-//   description,
-//   price,
-//   host)
-// VALUES (
-//   );
-// `;
+
+
+
 
 const viewProperties = (request, response) => {
-    pool.query('SELECT * FROM properties', (error, results) => {
+    client.query('SELECT * FROM properties', (error, results) => {
       if (error) {
         throw error
       }
-      response.status(200).json(results.rows)
+      console.log(results.rows[0].title)
     })
   }
 
 
-client.query(viewProperties, (err, res) => {
-  if (err) {
-    console.error(err);
-    return;
-  }
-  client.end();
-});
+  viewProperties(request)
+
+
+// client.query(insertProperty(), (err, res) => {
+//   if (err) {
+//     console.error(err);
+//     return;
+//   }
+//   client.end();
+// });
+
 
 
 module.exports = {
@@ -70,6 +76,3 @@ module.exports = {
     createTableProperties,
     client,
   }
-
-
-console.log(module)
