@@ -53,9 +53,6 @@ const viewProperties = (request, response) => {
   }
 
 
-  viewProperties(request)
-
-
 // client.query(insertProperty(), (err, res) => {
 //   if (err) {
 //     console.error(err);
