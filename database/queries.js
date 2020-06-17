@@ -43,10 +43,6 @@ const request = {'body':{title: 'villa', location: 'Valencia', description: 'bla
 // console.log(request.body)
 
 
-
-
-
-
 const viewProperties = (request, response) => {
     client.query('SELECT * FROM properties', (error, results) => {
       if (error) {
