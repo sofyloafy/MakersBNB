@@ -30,20 +30,17 @@ const client = new Client({
 client.connect();
 
 class Property {
-  constructor() {
-    this.properties = []
-  }
 
   viewProperties = () => {
     client.query('SELECT * FROM properties', (error, results) => {
       if (error) {
         throw error
       }
-      // return results.rows[0]
+      return(results.rows)
 
     })
-
   }
+
 
   insertProperty = (request, response) => {
     const { title, location, description, price, host } = request.body
@@ -67,7 +64,9 @@ class Property {
   }
 }
 
-// var properties = new Property
+var properties = new Property
+console.log(properties.viewProperties())
+
 // properties.viewProperties();
 // db.insertProperty(request)
 
