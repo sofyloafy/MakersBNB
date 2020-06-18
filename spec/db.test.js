@@ -6,17 +6,19 @@ describe('Properties', function () {
   var request = { 'body': { title: 'villa', location: 'Valencia', description: 'bla bla', price: 100, host: 'Sophie' } }
   // })
 
-  it('inserts properties into the testdb', async () => {
+  it('inserts properties into the testdb', async (done) => {
     var result = await client.query('SELECT * FROM properties')
     properties.insertProperty(request)
     expect(result.rows[0]).toEqual(request.body);
+    done();
   });
 
 
-  it('returns properties from the testdb', async () => {
-    var result = await properties.viewProperties(request)
+  it('returns properties from the testdb', async (done) => {
+    const result = await properties.viewProperties()
     console.log(result)
-    expect(result).toEqual(request.body)
+    expect(result.rows[0]).toEqual(request.body)
+    done();
   });
 });
 

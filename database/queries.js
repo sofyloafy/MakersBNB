@@ -32,13 +32,8 @@ client.connect();
 class Property {
 
   viewProperties = () => {
-    client.query('SELECT * FROM properties', (error, results) => {
-      if (error) {
-        throw error
-      }
-      return(results.rows)
-
-    })
+    var res = client.query('SELECT * FROM properties')
+    return res
   }
 
 
@@ -64,8 +59,8 @@ class Property {
   }
 }
 
-var properties = new Property
-console.log(properties.viewProperties())
+// var properties = new Property
+// properties.truncateTable()
 
 // properties.viewProperties();
 // db.insertProperty(request)
