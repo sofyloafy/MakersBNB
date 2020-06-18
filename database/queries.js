@@ -32,18 +32,22 @@ client.connect();
 const request = { 'body': { title: 'villa', location: 'Valencia', description: 'bla bla', price: 100, host: 'Sophie' } }
 
 class Property {
+  constructor() {
+    this.properties = []
+  }
 
-  const viewProperties = (request, response) => {
-      client.query('SELECT * FROM properties', (error, results) => {
-        if (error) {
-          throw error
-        }
-        console.log(results.rows[0].title)
-      })
-    }
+  viewProperties = () => {
+    client.query('SELECT * FROM properties', (error, results) => {
+      if (error) {
+        throw error
+      }
+      // return results.rows[0]
 
-  const insertProperty = (request, response) => {
-    console.log("Hello world")
+    })
+
+  }
+
+  insertProperty = (request, response) => {
     const { title, location, description, price, host } = request.body
 
     client.query('INSERT INTO properties (title, location, description, price, host) VALUES ($1, $2, $3, $4, $5)',
@@ -51,11 +55,11 @@ class Property {
         if (error) {
           throw error
         }
-        console.log("Hello world")
+
       })
   }
 
-  const truncateTable = () => {
+  truncateTable = () => {
     client.query('TRUNCATE TABLE properties', (error, result) => {
       if (error) {
         throw error
@@ -65,13 +69,14 @@ class Property {
 
   }
 }
+
+// var properties = new Property
+// properties.viewProperties();
 // db.insertProperty(request)
 
 // insertProperty(request);
 
 module.exports = {
-    viewProperties,
-    insertProperty,
-    createTableProperties,
-    client,
-  }
+  Property,
+  client,
+}
