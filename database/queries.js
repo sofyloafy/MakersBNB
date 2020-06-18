@@ -1,67 +1,73 @@
+// const db = require('./database/queries');
 require('dotenv').config();
+process.env.NODE_ENV = 'test';
 const { Client } = require('pg');
 
+
+// beforeAll(() => {
+//   // Clears the database and adds some testing data.
+//   // Jest will wait for this promise to resolve before running tests.
+//   return db.clear().then(() => {
+//     return db.insert({testData: 'foo'});
+//   });
+// });
+var DB = ""
+if (process.env.NODE_ENV == 'test') {
+  DB = 'test_makersbnb'
+}
+else {
+  DB = 'makersbnb'
+}
+
 const client = new Client({
-    user: 'sophiebrown',
-    host: 'localhost',
-    database: 'makersbnb',
-    password: 'password',
-    port: 5432,
+  user: 'victorvallet',
+  host: 'localhost',
+  database: `${DB}`,
+  password: 'password',
+  port: 5432
 });
 
 client.connect();
 
-const createTableProperties = `
-CREATE TABLE properties (
-    title varchar(60),
-    location varchar,
-    description varchar,
-    price int,
-    host varchar
-);
-`;
+const request = { 'body': { title: 'villa', location: 'Valencia', description: 'bla bla', price: 100, host: 'Sophie' } }
 
-const insertProperty = (request, response) => {
-  console.log("Hello world")
-  const { title, location, description, price, host} = request.body
+class Property {
 
-  client.query('INSERT INTO properties (title, location, description, price, host) VALUES ($1, $2, $3, $4, $5)',
-  [title, location, description, price, host], (error, results) => {
-    if (error) {
-      throw error
+  const viewProperties = (request, response) => {
+      client.query('SELECT * FROM properties', (error, results) => {
+        if (error) {
+          throw error
+        }
+        console.log(results.rows[0].title)
+      })
     }
-    // response.status(201).send(`Property added with ID: ${results.rows[0].id}`)
+
+  const insertProperty = (request, response) => {
     console.log("Hello world")
-  })
-}
+    const { title, location, description, price, host } = request.body
 
-const request = {'body':{title: 'villa', location: 'Valencia', description: 'bla bla', price: 100, host: 'Sophie'}}
+    client.query('INSERT INTO properties (title, location, description, price, host) VALUES ($1, $2, $3, $4, $5)',
+      [title, location, description, price, host], (error, results) => {
+        if (error) {
+          throw error
+        }
+        console.log("Hello world")
+      })
+  }
 
-// (insertProperty({body}));
-
-// insertProperty(request)
-// console.log(request.body)
-
-
-const viewProperties = (request, response) => {
-    client.query('SELECT * FROM properties', (error, results) => {
+  const truncateTable = () => {
+    client.query('TRUNCATE TABLE properties', (error, result) => {
       if (error) {
         throw error
       }
-      console.log(results.rows[0].title)
+      console.log("Table truncated")
     })
+
   }
+}
+// db.insertProperty(request)
 
-
-// client.query(insertProperty(), (err, res) => {
-//   if (err) {
-//     console.error(err);
-//     return;
-//   }
-//   client.end();
-// });
-
-
+// insertProperty(request);
 
 module.exports = {
     viewProperties,
