@@ -20,7 +20,7 @@ else {
 }
 
 const client = new Client({
-  user: 'victorvallet',
+  user: 'sophiebrown',
   host: 'localhost',
   database: `${DB}`,
   password: 'password',
@@ -28,8 +28,6 @@ const client = new Client({
 });
 
 client.connect();
-
-const request = { 'body': { title: 'villa', location: 'Valencia', description: 'bla bla', price: 100, host: 'Sophie' } }
 
 class Property {
   constructor() {
@@ -55,7 +53,6 @@ class Property {
         if (error) {
           throw error
         }
-
       })
   }
 
