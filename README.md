@@ -1,6 +1,6 @@
 # MakersBnB
 
-## [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting Set Sp](https://github.com/sofyloafy/MakersBnb#gettingsetup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#userstories) - [Models](https://github.com/sofyloafy/MakersBnb#models) - [Approach and Values](https://github.com/sofyloafy/MakersBnb#approachandvalues) - [Technologies Used](https://github.com/sofyloafy/MakersBnb#technologiesused) - [Future Developments](https://github.com/sofyloafy/MakersBnb#)
+## [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting Set Up](https://github.com/sofyloafy/MakersBnb#setup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#user-stories) - [Models](https://github.com/sofyloafy/MakersBnb#models) - [Approach and Values](https://github.com/sofyloafy/MakersBnb#approach-and-values) - [Technologies Used](https://github.com/sofyloafy/MakersBnb#technologies-used) - [Future Developments](https://github.com/sofyloafy/MakersBnb#)
 
 ## Team
 * [Sophie Brown](https://github.com/sofyloafy)
@@ -8,7 +8,7 @@
 * [Joshua Brook](https://github.com/joshuaabrookuk)
 * [Benedetta Arinci](https://github.com/benearinci)
 
-## Getting set up
+## Setup
 First, clone this repository and ensure you have node.js and npm installed. Then:
 
 ```
