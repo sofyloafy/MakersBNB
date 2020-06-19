@@ -1,6 +1,6 @@
 # MakersBnB
 
-## [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting Set Sp](https://github.com/sofyloafy/MakersBnb#gettingsetup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#userstories) - [Models](https://github.com/sofyloafy/MakersBnb#models) - [Approach](https://github.com/sofyloafy/MakersBnb#approach) - [Technologies Used](https://github.com/sofyloafy/MakersBnb#technologiesused) - [Future Developments](https://github.com/sofyloafy/MakersBnb#)
+## [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting Set Sp](https://github.com/sofyloafy/MakersBnb#gettingsetup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#userstories) - [Models](https://github.com/sofyloafy/MakersBnb#models) - [Approach and Values](https://github.com/sofyloafy/MakersBnb#approach) - [Technologies Used](https://github.com/sofyloafy/MakersBnb#technologiesused) - [Future Developments](https://github.com/sofyloafy/MakersBnb#)
 
 ## Team
 * [Sophie Brown](https://github.com/sofyloafy)
@@ -79,7 +79,7 @@ Had time permitted, we would have had a login page with a user database, which t
 ![](./images/userX.png)
 
 
-## Approach & Values
+## Approach and Values
 This week offered groups the opportunity to tackle a MakersBnB challenge in any way that the teams saw fit. Largely, the options were to write the entire app in Ruby/ Sinatra, or to divide the backend and front end with a Ruby/ JS split.
 
 We decided to bypass both options, and focus on learning. We decided to eschew the MakersBnB final product vision, and attempt to create a small app with Node.js. 
