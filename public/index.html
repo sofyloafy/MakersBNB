@@ -3,18 +3,30 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <title>Makers BnB</title>
 </head>
 
 <body>
-  <center>
-  <img src='./Makers bnd.png' style='max-width: 400px;'>
-  <h1>Welcome to MakersBnB website</h1>
-  <p> Have a look at the list of properties </p>
-  <form action = "/profile" method='get'>
-  <input type='submit' value="Let's go!" class='showpropertiesbutton' >
-  </form>
-</center>
+  <div class="container center-align" style="margin-top:10%;">
+    <img src='./Makers bnd.png' style='max-width: 400px;'>
+    <h1>Welcome to MakersBnB website</h1>
+    <p> Have a look at the list of properties </p>
+    <div style="margin-top:50px;">
+      <form action="/profile" method='get'>
+        <button type="submit" class="btn" style="background-color:#FF395C;">Let's go!
+          <i class="material-icons right">send</i>
+        </button>
+      </form>
+    </div>
+
+  </div>
+
+
+
 </body>
 
 </html>

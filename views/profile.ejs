@@ -1,8 +1,6 @@
 <body>
-  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-  <!-- Compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <main>
     <div class="container center-align">
@@ -18,21 +16,51 @@
             <div class="card-content">
               <p><%= home.description %></p>
             </div>
+            <div class="chip" style="background-color:#FF395C;color:white;">
+              £<%= home.price %>/per night
+            </div>
             <div class="card-action">
-              <p>£<%= home.price %></p>
+              <button class="btn" style="background-color:#FF395C;color:white;">Choose me!</button>
             </div>
           </div>
         </div>
         <% }) %>
       </div>
-      <div class="container center-align">
-        <form action="/newproperty" method="post" style="max-width:500px;">
-          <input type="text" class="title" name="title" placeholder="title">
-          <input type="text" name="location" placeholder="location">
-          <input type="text" name="description" placeholder="description">
-          <input type="text" name="price" placeholder="price">
-          <input type="text" name="host" placeholder="host">
-          <input type="submit" value="Add property" class="btn red">
+      <div class="card" style="padding:10px;">
+
+        <form class="col s12" action="/newproperty" method="post">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Name of the host</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">person_pin_circle</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Name of the property</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">add_location</i>
+              <input id="icon_telephone" type="text" class="validate">
+              <label for="icon_telephone">Location</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <i class="material-icons prefix">create</i>
+              <input id="icon_prefix" type="text" class="validate">
+              <label for="icon_prefix">Description</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">attach_money</i>
+              <input type="number" class="validate">
+              <label for="icon_prefix">Price per night</label>
+            </div>
+            <input type="submit" value="Add property" class="btn" style="background-color:#FF395C;">
+          </div>
         </form>
       </div>
 
