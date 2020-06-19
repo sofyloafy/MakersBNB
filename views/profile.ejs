@@ -1,4 +1,3 @@
-
 <form action="/newproperty" method="post">
   <input type="text" class="title" name="title" placeholder="title">
   <input type="text" name="location" placeholder="location">
@@ -6,3 +5,10 @@
   <input type="text" name="price" placeholder="price">
   <input type="text" name="host" placeholder="host">
   <input type="submit" value="Add property">
+</form>
+
+<ul>
+  <% homes.forEach(function(home){ %>
+  <li>Title: <%= home.title %>, Location: <%= home.location %>, Price: £<%= home.price %></li>
+  <% }) %>
+</ul>

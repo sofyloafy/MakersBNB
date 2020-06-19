@@ -29,7 +29,7 @@ app.get('/sign-in', function (request, response) {
 
 app.get('/profile', function (req, res) {
   property.viewProperties()
-  res.render('profile')
+  res.render('profile', { homes: property.homes })
 });
 
 

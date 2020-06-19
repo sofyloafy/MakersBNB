@@ -20,7 +20,7 @@ else {
 }
 
 const client = new Client({
-  user: 'sophiebrown',
+  user: 'victorvallet',
   host: 'localhost',
   database: `${DB}`,
   password: 'password',
@@ -30,9 +30,12 @@ const client = new Client({
 client.connect();
 
 class Property {
-
-  viewProperties = () => {
-    var res = client.query('SELECT * FROM properties')
+  constructor() {
+    this.homes = []
+  }
+  viewProperties = async () => {
+    var res = await client.query('SELECT * FROM properties')
+    this.homes = res.rows
     return res
   }
 
@@ -59,8 +62,8 @@ class Property {
   }
 }
 
-// var properties = new Property
-// properties.truncateTable()
+var properties = new Property
+properties.viewProperties();
 
 // properties.viewProperties();
 // db.insertProperty(request)
