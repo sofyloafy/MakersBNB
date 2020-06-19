@@ -89,4 +89,15 @@ Our priorities this week:
 * To push past comfort zones :heavy_check_mark:
 * Set stretch goals every day :heavy_check_mark:
 * To maintain team morale and good mental health :heavy_check_mark:
-* To learn a bit more about Node and how to test it :heavy_check_mark:
+* To learn more on Node.js and how to test it :heavy_check_mark:
+
+Team communication throughout the week has remained the biggest project, and ensures that any learnings are shared.
+
+## Technologies Used
+* JavaScript
+* Node.js
+* Jest testing framework
+* PostGres
+* HTML & CSS
+* Dotenv
+
