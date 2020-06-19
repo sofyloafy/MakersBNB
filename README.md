@@ -1,6 +1,6 @@
 # MakersBnB
 
-## [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting Set Up](https://github.com/sofyloafy/MakersBnb#setup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#user-stories) - [Models](https://github.com/sofyloafy/MakersBnb#models) - [Approach and Values](https://github.com/sofyloafy/MakersBnb#approach-and-values) - [Technologies Used](https://github.com/sofyloafy/MakersBnb#technologies-used) - [Future Developments](https://github.com/sofyloafy/MakersBnb#)
+## [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting Set Up](https://github.com/sofyloafy/MakersBnb#setup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#user-stories) - [Models](https://github.com/sofyloafy/MakersBnb#models) - [Approach and Values](https://github.com/sofyloafy/MakersBnb#approach-and-values) - [Technologies Used](https://github.com/sofyloafy/MakersBnb#technologies-used) - [Future Developments](https://github.com/sofyloafy/MakersBnb#future-developments)
 
 ## Team
 * [Sophie Brown](https://github.com/sofyloafy)
