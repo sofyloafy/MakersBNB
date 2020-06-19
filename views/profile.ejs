@@ -1,14 +1,44 @@
-<form action="/newproperty" method="post">
-  <input type="text" class="title" name="title" placeholder="title">
-  <input type="text" name="location" placeholder="location">
-  <input type="text" name="description" placeholder="description">
-  <input type="text" name="price" placeholder="price">
-  <input type="text" name="host" placeholder="host">
-  <input type="submit" value="Add property">
-</form>
+<body>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-<ul>
-  <% homes.forEach(function(home){ %>
-  <li>Title: <%= home.title %>, Location: <%= home.location %>, Price: £<%= home.price %></li>
-  <% }) %>
-</ul>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <main>
+    <div class="container center-align">
+      <h4>You villas</h4>
+      <div class="row">
+        <% homes.forEach(function(home){ %>
+        <div class="col s3">
+          <div class="card hoverable">
+            <div class="card-image">
+              <img src="villa-1209148_640.jpg">
+              <span class="card-title"><%= home.title %></span>
+            </div>
+            <div class="card-content">
+              <p><%= home.description %></p>
+            </div>
+            <div class="card-action">
+              <p>£<%= home.price %></p>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+      <div class="container center-align">
+        <form action="/newproperty" method="post" style="max-width:500px;">
+          <input type="text" class="title" name="title" placeholder="title">
+          <input type="text" name="location" placeholder="location">
+          <input type="text" name="description" placeholder="description">
+          <input type="text" name="price" placeholder="price">
+          <input type="text" name="host" placeholder="host">
+          <input type="submit" value="Add property" class="btn red">
+        </form>
+      </div>
+
+    </div>
+
+
+  </main>
+
+</body>

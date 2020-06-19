@@ -38,6 +38,7 @@ app.post('/newproperty', function (req, response) {
   // response.send(req.body);
   console.log(req.body)
   property.insertProperty(req)
+  response.redirect('/profile')
 });
 
 
