@@ -1,11 +1,18 @@
 const express = require('express')
 const db = require('./database/queries')
-var bodyParser = require('body-parser')
 const app = express()
 const port = 4000
 
+var bodyParser = require('body-parser')
+app.use(bodyParser.json());       // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
+  extended: true
+}));
 
-app.use(bodyParser.json());
+app.use(express.json());       // to support JSON-encoded bodies
+app.use(express.urlencoded()); // to support URL-encoded bodies
+
+
 
 var property = new db.Property()
 
@@ -26,9 +33,11 @@ app.get('/profile', function (req, res) {
 });
 
 
-app.post('/newproperty', function (req) {
+app.post('/newproperty', function (req, response) {
   const { title, location, description, price, host } = req.body
-  property.insertProperty(title, location, description, price, host)
+  // response.send(req.body);
+  console.log(req.body)
+  property.insertProperty(req)
 });
 
 
