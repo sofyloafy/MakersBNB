@@ -70,4 +70,9 @@ The responsibilities have been shared amongst the class in order to comply with 
 [![](https://mermaid.ink/img/eyJjb2RlIjoiY2xhc3NEaWFncmFtXG5cdEhvbWUgPHwtLSBVc2VyXG5cdEhvbWUgPHwtLSBQcm9wZXJ0eVxuXHRIb21lOiBsaXN0KHByb3BlcnR5KVxuXHRIb21lOiB2aWV3KGZlZWQpXG5cdGNsYXNzIFVzZXJ7XG5cdCAgICBcblx0XHRzaWduVXAoZW1haWwscGFzc3dvcmQsdXNlcm5hbWUpXG5cdFx0c2lnbkluKGVtYWlsLHBhc3N3b3JkKVxuXHR9XG5cdGNsYXNzIFByb3BlcnR5e1xuXHRcdHRpdGxlIFxuXHRcdGRlc2NyaXB0aW9uXG5cdFx0cHJpY2Vcblx0XHRsb2NhdGlvblxuXG5cdH1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiY2xhc3NEaWFncmFtXG5cdEhvbWUgPHwtLSBVc2VyXG5cdEhvbWUgPHwtLSBQcm9wZXJ0eVxuXHRIb21lOiBsaXN0KHByb3BlcnR5KVxuXHRIb21lOiB2aWV3KGZlZWQpXG5cdGNsYXNzIFVzZXJ7XG5cdCAgICBcblx0XHRzaWduVXAoZW1haWwscGFzc3dvcmQsdXNlcm5hbWUpXG5cdFx0c2lnbkluKGVtYWlsLHBhc3N3b3JkKVxuXHR9XG5cdGNsYXNzIFByb3BlcnR5e1xuXHRcdHRpdGxlIFxuXHRcdGRlc2NyaXB0aW9uXG5cdFx0cHJpY2Vcblx0XHRsb2NhdGlvblxuXG5cdH1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9LCJ1cGRhdGVFZGl0b3IiOmZhbHNlfQ)
 
 
-The diagram below demonstrates
+The diagram below demonstrates the MVC overview of the data flow for viewing properties:
+![](./images/MVC.png)
+
+In addition, we modelled the user experience through the page, and the landing log in page that welcomes them.
+Had time permitted, we would have had a login page with a user database, which then leads them to a personalised homepage, displaying properties, with an option to list a further property. Modelled below:
+![](./images/userX.png)
