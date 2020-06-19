@@ -1,4 +1,11 @@
 # MakersBNB
+### [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting set up](https://github.com/sofyloafy/MakersBnb#gettingsetup) - [Testing](https://github.com/sofyloafy/MakersBnb#testing) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#userstories)
+
+### Team
+* [Sophie Brown](https://github.com/sofyloafy)
+* [Victor Vallet](https://github.com/victorvallet)
+* [Joshua Brook](https://github.com/joshuaabrookuk)
+* [Benedetta Arinci](https://github.com/benearinci)
 
 # In order to run the tests:
 
