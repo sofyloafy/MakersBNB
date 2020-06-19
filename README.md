@@ -1,5 +1,6 @@
-# MakersBNB
-### [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting set up](https://github.com/sofyloafy/MakersBnb#gettingsetup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#userstories) - [Models](https://github.com/sofyloafy/MakersBnb#models)
+# MakersBnB
+
+### [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting Set Sp](https://github.com/sofyloafy/MakersBnb#gettingsetup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#userstories) - [Models](https://github.com/sofyloafy/MakersBnb#models) - [Approach](https://github.com/sofyloafy/MakersBnb#approach) - [Technologies Used](https://github.com/sofyloafy/MakersBnb#technologiesused)
 
 ## Team
 * [Sophie Brown](https://github.com/sofyloafy)
@@ -67,7 +68,7 @@ We decided to model our approach for the MVP, and the domain model below
 demostrates what we would have liked to achieve, had time permitted.
 The responsibilities have been shared amongst the class in order to comply with SRP.
 
-[![](./images/Initial_MVP_BNB.png)
+![](./images/Initial_MVP_BNB.png)
 
 
 The diagram below demonstrates the MVC overview of the data flow for viewing properties:
@@ -76,3 +77,16 @@ The diagram below demonstrates the MVC overview of the data flow for viewing pro
 In addition, we modelled the user experience through the page, and the landing log in page that welcomes them.
 Had time permitted, we would have had a login page with a user database, which then leads them to a personalised homepage, displaying properties, with an option to list a further property. Modelled below:
 ![](./images/userX.png)
+
+
+## Approach
+This week offered groups the opportunity to tackle a MakersBnB challenge in any way that the teams saw fit. Largely, the options were to write the entire app in Ruby/ Sinatra, or to divide the backend and front end with a Ruby/ JS split.
+
+We decided to bypass both options, and focus on learning. We decided to eschew the MakersBnB final product vision, and attempt to create a small app with Node.js. 
+
+Our priorities this week:
+* To be a better dev than yesterday :heavy_check_mark:
+* To push past comfort zones :heavy_check_mark:
+* Set stretch goals every day :heavy_check_mark:
+* To maintain team morale and good mental health :heavy_check_mark:
+* To learn a bit more about Node and how to test it :heavy_check_mark:
