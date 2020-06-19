@@ -1,6 +1,6 @@
 # MakersBnB
 
-### [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting Set Sp](https://github.com/sofyloafy/MakersBnb#gettingsetup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#userstories) - [Models](https://github.com/sofyloafy/MakersBnb#models) - [Approach](https://github.com/sofyloafy/MakersBnb#approach) - [Technologies Used](https://github.com/sofyloafy/MakersBnb#technologiesused)
+## [Team](https://github.com/sofyloafy/MakersBnb#team) - [Getting Set Sp](https://github.com/sofyloafy/MakersBnb#gettingsetup) - [Spec](https://github.com/sofyloafy/MakersBnb#spec) - [User Stories](https://github.com/sofyloafy/MakersBnb#userstories) - [Models](https://github.com/sofyloafy/MakersBnb#models) - [Approach](https://github.com/sofyloafy/MakersBnb#approach) - [Technologies Used](https://github.com/sofyloafy/MakersBnb#technologiesused) - [Future Developments](https://github.com/sofyloafy/MakersBnb#)
 
 ## Team
 * [Sophie Brown](https://github.com/sofyloafy)
@@ -79,12 +79,12 @@ Had time permitted, we would have had a login page with a user database, which t
 ![](./images/userX.png)
 
 
-## Approach
+## Approach & Values
 This week offered groups the opportunity to tackle a MakersBnB challenge in any way that the teams saw fit. Largely, the options were to write the entire app in Ruby/ Sinatra, or to divide the backend and front end with a Ruby/ JS split.
 
 We decided to bypass both options, and focus on learning. We decided to eschew the MakersBnB final product vision, and attempt to create a small app with Node.js. 
 
-Our priorities this week:
+Our priorities and values this week:
 * To be a better dev than yesterday :heavy_check_mark:
 * To push past comfort zones :heavy_check_mark:
 * Set stretch goals every day :heavy_check_mark:
@@ -101,3 +101,10 @@ Team communication throughout the week has remained the biggest project, and ens
 * HTML & CSS
 * Dotenv
 
+## Future Developments
+We acknowledge our greatest flaw in this project is the lack of finished MVP. This was a values-driven decision that we made at the beginning of the week, to reflect our priority of learning over a rushed finished product.
+
+Regardless of this acknowledge, here our future developments to overcome shortcomings:
+* Shift from learnings-focused approach to initialize project to a results-focused approach to finish the product.
+* Incorporate CSS to aid in the profile of a functioning webapp.
+* Include feature tests to ensure that database connections are being tested dynamically, rather than with static variables.
